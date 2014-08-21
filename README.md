@@ -11,8 +11,8 @@ course offered through Coursera.org from Johns Hopkins University, August 2014.
 ### Files in this repository ###
 README.md - This file.
 
-
 CodeBook.md - A codebook describing the various data values.
+
 run_analysis.R - My R script to process the source data and produce the
 Tidy Dataset.
 
