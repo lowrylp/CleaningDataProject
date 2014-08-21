@@ -1,4 +1,4 @@
-### Getting and Cleaning Data Course Project ###
+## Getting and Cleaning Data Course Project ##
 
 This README.md describes the purpose and function of the various required 
 files to complete the class project for the Getting and Cleaning Date
@@ -6,7 +6,7 @@ course offered through Coursera.org from Johs Hopkins University, August 2014.
 
 
 
-## Description of Project ##
+### Description of Project ###
 
 
 
