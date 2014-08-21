@@ -1,6 +1,29 @@
 ## Getting and Cleaning Data Course Project ##
 
-**MarkdownPad** is a full-featured Markdown editor for Windows.
+This README.md describes the purpose and function of the various required 
+files to complete the class project for the Getting and Cleaning Date
+course offered through Coursera.org from Johs Hopkins University, August 2014.
+
+
+
+## Description of Project ##
+
+
+
+This repository is used to store the required files to d
+
+## Script Functionality ##
+
+
+## Script Instructions ##
+
+
+## Source Data Provided Description
+
+
+
+
+
 
 ### Files in this repository ###
 
