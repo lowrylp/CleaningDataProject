@@ -79,5 +79,6 @@ colnames(tidydata) <- tidyheaders
 tidyavg <- aggregate(tidydata[,3:ncol(tidydata)], by=list(tidydata$activity, tidydata$subject), FUN=mean, na.rm=TRUE)
 colnames(tidyavg)[1] = "activity"
 colnames(tidyavg)[2] = "subject"
+write.table(tidyavg, file="tidydata.txt", row.names=FALSE)
 write.csv(tidyavg, file="tidydata.csv", row.names=FALSE)
       

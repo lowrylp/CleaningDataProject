@@ -25,9 +25,6 @@ Inside this zip file you will find a directory "UCI HAR Dataset".  Extract this 
 A full description for this data is available here:</br>
 [(http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Usin+Smartphones)](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Usin+Smartphones) 
 
-
-
-
 ### Script Instructions ###
 * Place the run_alanysis.R script in a directory to be used as the working directory
 * The directory **UCI HAR Dataset** downloaded and extracted above is also placed in this working directory
@@ -45,6 +42,8 @@ The script does the five (5) steps required of the project:
 5. Creates a second, independent tidy data set with the average of each variable for 
 each activity and each subject.
 
+The script writes the tidy data set out twice.  Once using write.table to submit for grading and then again as a csv file to aid in creating the CodeBook.md file
+ 
 
 
 

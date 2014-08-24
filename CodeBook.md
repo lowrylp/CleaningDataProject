@@ -79,11 +79,12 @@ colnames(tidydata) <- tidyheaders
 
 #### Step 5: Create a second independent tidy data set with the average for each variable
 - The averages will be for each activity and each subject
-- Write the tidydata set as a csv file
+- Write the tidydata set as a text file for submission to Coursera and as a csv file to aid in creating the variable descriptions below
 ```
 tidyavg <- aggregate(tidydata[,3:ncol(tidydata)], by=list(tidydata$activity, tidydata$subject), FUN=mean, na.rm=TRUE)
 colnames(tidyavg)[1] = "activity"
 colnames(tidyavg)[2] = "subject"
+write.table(tidyavg, file="tidydata.txt", row.names=FALSE)
 write.csv(tidyavg, file="tidydata.csv", row.names=FALSE)
 ```
 
@@ -92,7 +93,7 @@ write.csv(tidyavg, file="tidydata.csv", row.names=FALSE)
 - The Maximum and minimum values are or the averaged values in the tidy data set
 
 Column | Variable Name | Data Type | Minimun | Maximun
------- | ---------------------------------- | --------- | ---------- | ----------
+------ | ---------------------------------- | --------- | ------------- | -------------
 1|activity|text|WALKING|LAYING
 2|subject|int|1|30
 3|TimeDomainBodyAccelerationMeanValueXaxis|float|0.23327544|0.30146102
