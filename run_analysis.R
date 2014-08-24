@@ -59,19 +59,17 @@ tidydata$index <- NULL
       
 # Appropriately relabel the variables 
 tidyheaders <- colnames(tidydata)
-tidyheaders <- gsub('-mean()', 'meanvalue', tidyheaders)
-tidyheaders <- gsub('()-X', 'xaxis', tidyheaders)
-tidyheaders <- gsub('-Y', 'yaxis', tidyheaders)
-tidyheaders <- gsub('-Z', 'zaxis', tidyheaders)
-tidyheaders <- gsub('-mean()', 'meanvalue', tidyheaders)
-tidyheaders <- gsub('-std()', 'standarddeviation', tidyheaders)
-tidyheaders <- gsub('Freq()', 'frequency', tidyheaders)
-tidyheaders <- gsub('Acc', 'acceleration', tidyheaders)
-tidyheaders <- gsub('tBody', 'timedomainbody', tidyheaders)
-tidyheaders <- gsub('tGravity', 'timedomaingravity', tidyheaders)
-tidyheaders <- gsub('fBody', 'frequencydomain', tidyheaders)
+tidyheaders <- gsub('-mean()', 'MeanValue', tidyheaders)
+tidyheaders <- gsub('()-X', 'Xaxis', tidyheaders)
+tidyheaders <- gsub('-Y', 'Yaxis', tidyheaders)
+tidyheaders <- gsub('-Z', 'Zaxis', tidyheaders)
+tidyheaders <- gsub('-std()', 'StandardDeviation', tidyheaders)
+tidyheaders <- gsub('Freq()', 'Frequency', tidyheaders)
+tidyheaders <- gsub('Acc', 'Acceleration', tidyheaders)
+tidyheaders <- gsub('tBody', 'TimeDomainBody', tidyheaders)
+tidyheaders <- gsub('tGravity', 'TimeDomainGravity', tidyheaders)
+tidyheaders <- gsub('fBody', 'FrequencyDomain', tidyheaders)
 tidyheaders <- gsub('()', '', tidyheaders, fixed=TRUE)
-tidyheaders <- tolower(tidyheaders)
 colnames(tidydata) <- tidyheaders
   
 # Step 5
